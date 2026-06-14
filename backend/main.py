@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from app.api.student_profile import router as profile_router
 from app.database.database import engine
 from app.database.database import Base
 
@@ -21,3 +21,4 @@ def root():
     }
     
 app.include_router(memory_router)
+app.include_router(profile_router)

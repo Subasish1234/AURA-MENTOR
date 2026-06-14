@@ -24,3 +24,5 @@ class Memory(Base):
     memory_type = Column(String)
 
     content = Column(String)
+    
+from app.models.student_profile import StudentProfile
