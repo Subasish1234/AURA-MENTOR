@@ -26,3 +26,5 @@ class Memory(Base):
     content = Column(String)
     
 from app.models.student_profile import StudentProfile
+
+from app.models.conversation_history import ConversationHistory
